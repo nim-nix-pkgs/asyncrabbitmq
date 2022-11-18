@@ -13,6 +13,14 @@
   inputs.src-asyncrabbitmq-v0_1.repo  = "rabbitmq.nim";
   inputs.src-asyncrabbitmq-v0_1.type  = "github";
   
+  inputs."networkutils".owner = "nim-nix-pkgs";
+  inputs."networkutils".ref   = "master";
+  inputs."networkutils".repo  = "networkutils";
+  inputs."networkutils".dir   = "v0_6_1";
+  inputs."networkutils".type  = "github";
+  inputs."networkutils".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."networkutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
