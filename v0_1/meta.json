@@ -1,8 +1,0 @@
-{
-  "description": "Pure Nim asyncronous driver for RabbitMQ",
-  "license": "MIT",
-  "name": "asyncrabbitmq",
-  "ref": "refs/tags/v0.1",
-  "url": "https://github.com/Q-Master/rabbitmq.nim",
-  "version": "v0_1"
-}
